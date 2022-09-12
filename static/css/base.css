@@ -1,0 +1,9 @@
+#container {
+    display:grid;
+    background-color:red;
+    width: 50%;
+}
+
+h1 {
+    color:lightcoral;
+}

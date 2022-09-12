@@ -1,4 +1,5 @@
 #Custom
+staticfiles/
 logs/
 *venv*
 */target/*

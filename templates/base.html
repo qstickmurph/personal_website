@@ -3,19 +3,33 @@
 <head>
     <title>Quinn Murphey</title>
     <link href="/static/css/base.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    {% endblock head %}
 </head>
 <body>
-    <div id="container">
-        <header>
+    <header>
+        <div id="title">
+            {% block header %}
             <h1>Quinn Murphey</h1>
-        </header>
-        <nav>
-
-        </nav>
-        <main>
-            {% block content %}
-            {% endblock content %}
-        </main>
-    </div>
+            <!-- <h2 id="subtitle">Data Science | Mathematics | Activist</h2> !-->
+            {% endblock header %}
+        </div>
+        <div id="nav">
+            {% block nav %}
+            <a id="home-nav" href="/" target="_self">Home</a>
+            <a id="about-nav" href="/about" target="_self">About</a>
+            <a id="blog-nav" href="/blog" target="_self">Blog</a>
+            <a id="projects-nav" href="/projects" target="_self">Projects</a>
+            <a id="resume-nav" href="/resume" target="_self">Resume</a>
+            <a id="contact-nav" href="/contact" target="_self">Contact</a>
+            {% endblock nav %}
+        </div>
+    </header>
+    <main>
+        {% block body %}
+        
+        {% endblock body %}
+    </main>
 </body>
 </html>

@@ -40,6 +40,10 @@ header {
     flex-grow: 1;
 }
 
+a {
+    text-decoration: none;
+}
+
 #title {
     padding: 20px 20px;
     margin: 0px;
@@ -63,7 +67,6 @@ header {
 #nav a {
     font-size: 20px;
     line-height: 28px;
-    text-decoration: none;
     padding: 0px 0px;
     transition: all 0.5s ease-out;
 }
@@ -72,7 +75,8 @@ header {
     color: var(--red-text-color);
 }
 
-#nav #home-nav:hover {
+#nav #home-nav:hover,
+#nav #home-nav.highlighted {
     color: var(--light-red-text-color);
 }
 
@@ -80,7 +84,8 @@ header {
     color: var(--green-text-color);
 }
 
-#nav #about-nav:hover {
+#nav #about-nav:hover,
+#nav #about-nav.highlighted {
     color: var(--light-green-text-color);
 }
 
@@ -88,7 +93,8 @@ header {
     color: var(--yellow-text-color);
 }
 
-#nav #blog-nav:hover {
+#nav #blog-nav:hover,
+#nav #blog-nav.highlighted {
     color: var(--light-yellow-text-color);
 }
 
@@ -96,7 +102,8 @@ header {
     color: var(--blue-text-color);
 }
 
-#nav #projects-nav:hover {
+#nav #projects-nav:hover,
+#nav #projects-nav.highlighted {
     color: var(--light-blue-text-color);
 }
 
@@ -104,7 +111,8 @@ header {
     color: var(--orange-text-color);
 }
 
-#nav #resume-nav:hover {
+#nav #resume-nav:hover,
+#nav #resume-nav.highlighted {
     color: var(--light-orange-text-color);
 }
 
@@ -112,10 +120,12 @@ header {
     color: var(--purple-text-color);
 }
 
-#nav #contact-nav:hover {
+#nav #contact-nav:hover,
+#nav #contact-nav.highlighted {
     color: var(--light-purple-text-color);
 }
 
-#nav a:hover {
+#nav a:hover,
+#nav a.highlighted {
     font-size: 26px;
 }

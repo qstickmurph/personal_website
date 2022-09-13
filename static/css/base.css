@@ -25,7 +25,7 @@ body {
     display:flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin:0;
     padding:0;
     gap:0;
@@ -38,6 +38,11 @@ header {
     justify-content:space-between;
     align-items:center;
     flex-grow: 1;
+}
+
+main {
+    height: 100%;
+    width: 100%;
 }
 
 a {
@@ -128,4 +133,16 @@ a {
 #nav a:hover,
 #nav a.highlighted {
     font-size: 26px;
+}
+
+.photo-banner {
+    height: 720px;
+    width: 100%;
+    overflow: hidden;
+    opacity: 70%;
+}
+
+.photo-banner#home-photo-banner {
+    background: url("/static/images/thoreau-cabin-portrait.jpg") no-repeat scroll center top;
+    background-position-y: -100px;
 }

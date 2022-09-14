@@ -1,6 +1,7 @@
 #Custom
+staticfiles/
 logs/
-*venv*
+venv/
 */target/*
 *.zip
 *.pdf

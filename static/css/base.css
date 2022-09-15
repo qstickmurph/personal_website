@@ -32,7 +32,7 @@ body {
     gap:0;
 }
 
-header {
+.header-container {
     width: 100%;
     display:flex;
     flex-flow: row nowrap;
@@ -50,12 +50,12 @@ a {
     text-decoration: none;
 }
 
-#title {
+.title {
     padding: 20px 20px;
     margin: 0px;
 }
 
-#title h1 {
+.title h1 {
     color: var(--white-text-color);
     font-size: 40px;
     text-align: left;
@@ -64,75 +64,76 @@ a {
     display: inline;
 }
 
-#nav {
+nav {
     text-align: right;
     padding: 20px 20px;
     word-spacing: 0.6em;
 }
 
-#nav a {
+nav a {
     font-size: 20px;
     line-height: 28px;
     padding: 0px 0px;
     transition: all 0.5s ease-out;
 }
 
-#nav #home-nav {
+nav #home-link {
     color: var(--red-text-color);
 }
 
-#nav #home-nav:hover,
-#nav #home-nav.highlighted {
+nav #home-link:hover,
+#home-nav #home-link{
     color: var(--light-red-text-color);
+    font-size: 26px;
 }
 
-#nav #about-nav {
+nav #about-link {
     color: var(--green-text-color);
 }
 
-#nav #about-nav:hover,
-#nav #about-nav.highlighted {
+nav #about-link:hover,
+#about-nav #about-link{
     color: var(--light-green-text-color);
+    font-size: 26px;
 }
 
-#nav #blog-nav {
+nav #blog-link {
     color: var(--yellow-text-color);
 }
 
-#nav #blog-nav:hover,
-#nav #blog-nav.highlighted {
+nav #blog-link:hover,
+#blog-nav #blog-link{
     color: var(--light-yellow-text-color);
+    font-size: 26px;
 }
 
-#nav #projects-nav {
+nav #projects-link {
     color: var(--blue-text-color);
 }
 
-#nav #projects-nav:hover,
-#nav #projects-nav.highlighted {
+nav #projects-link:hover,
+#projects-nav #projects-link{
     color: var(--light-blue-text-color);
+    font-size: 26px;
 }
 
-#nav #resume-nav {
+nav #resume-link {
     color: var(--orange-text-color);
 }
 
-#nav #resume-nav:hover,
-#nav #resume-nav.highlighted {
+nav #resume-link:hover,
+#resume-nav #resume-link{
     color: var(--light-orange-text-color);
+    font-size: 26px;
 }
 
-#nav #contact-nav {
+nav #contact-link {
     color: var(--purple-text-color);
 }
 
-#nav #contact-nav:hover,
-#nav #contact-nav.highlighted {
+nav #contact-link:hover,
+#contact-nav #contact-link{
     color: var(--light-purple-text-color);
-}
-
-#nav a:hover,
-#nav a.highlighted {
     font-size: 26px;
 }
 

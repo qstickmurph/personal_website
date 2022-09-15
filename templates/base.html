@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
+{% block head %}
+<head id="base-head">
     <title>Quinn Murphey</title>
+    {% load static %}
     <link href="/static/css/base.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block head %}
-    {% endblock head %}
 </head>
+{% endblock head %}
 <body>
-    <header>
-        <div id="title">
-            {% block header %}
+    <div id="base-header-container" class="header-container">
+        {% block header %}
+        <header id="base-head" class="title">
             <a href="/"><h1>Quinn Murphey</h1></a>
             <!-- <h2 id="subtitle">Data Science | Mathematics | Activist</h2> !-->
-            {% endblock header %}
-        </div>
-        <div id="nav">
-            {% block nav %}
-            <a id="home-nav" href="/" target="_self">Home</a>
-            <a id="about-nav" href="/about" target="_self">About</a>
-            <a id="blog-nav" href="/blog" target="_self">Blog</a>
-            <a id="projects-nav" href="/projects" target="_self">Projects</a>
-            <a id="resume-nav" href="/resume" target="_self">Resume</a>
-            <a id="contact-nav" href="/contact" target="_self">Contact</a>
-            {% endblock nav %}
-        </div>
-    </header>
-    <main>
-        {% block body %}
+        </header>
+        {% endblock header %}
+        {% block nav %}
+        <nav id="base-nav">
+            <a id="home-link" href="/" target="_self">Home</a>
+            <a id="about-link" href="/about" target="_self">About</a>
+            <a id="blog-link" href="/blog" target="_self">Blog</a>
+            <a id="projects-link" href="/projects" target="_self">Projects</a>
+            <a id="resume-link" href="/resume" target="_self">Resume</a>
+            <a id="contact-link" href="/contact" target="_self">Contact</a>
+        </nav>
+        {% endblock nav %}
+    </div>
+    {% block main %}
+    <main id="base-main">
         
-        {% endblock body %}
     </main>
+    {% endblock main %}
+    {% block footer %}
+    <footer id="base-footer">
+        
+    </footer>
+    {% endblock footer %}
 </body>
 </html>

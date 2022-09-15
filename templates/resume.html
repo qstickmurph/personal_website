@@ -1,43 +1,45 @@
 {% extends "base.html" %}
 
 {% block nav %}
-<a id="home-nav" href="/" target="_self">Home</a>
-<a id="about-nav" href="/about" target="_self">About</a>
-<a id="blog-nav" href="/blog" target="_self">Blog</a>
-<a id="projects-nav" href="/projects" target="_self">Projects</a>
-<a id="resume-nav" class="highlighted" href="/resume" target="_self">Resume</a>
-<a id="contact-nav" href="/contact" target="_self">Contact</a>
+<nav id="resume-nav">
+    <a id="home-link" href="/" target="_self">Home</a>
+    <a id="about-link" href="/about" target="_self">About</a>
+    <a id="blog-link" href="/blog" target="_self">Blog</a>
+    <a id="projects-link" href="/projects" target="_self">Projects</a>
+    <a id="resume-link" href="/resume" target="_self">Resume</a>
+    <a id="contact-link" href="/contact" target="_self">Contact</a>
+</nav>
 {% endblock nav %}
 
-{% block body %}
-<div class="resume">
-    <div id="profile">
+{% block main %}
+<main id="resume-main">
+    <div id="resume-profile">
         <h2>Profile</h2>
 
     </div>
-    <div id="skills">
+    <div id="resume-skills">
         <h2>Skills</h2>
 
     </div>
-    <div id="education">
+    <div id="resume-education">
         <h2>Education</h2>
 
     </div>
-    <div id="experience">
+    <div id="resume-experience">
         <h2>Experience</h2>
 
     </div>
-    <div id="work">
+    <div id="resume-work">
         <h2>Highlighted Work</h2>
 
     </div>
-    <div id="languages">
+    <div id="resume-languages">
         <h2>Languages</h2>
 
     </div>
     <hr align="center">
-    <div id="attatchments">
+    <div id="resume-attatchments">
         <a href="/static/files/quinn-murphey-resume.pdf" download="quinn-murphey-resume.pdf">Download a pdf copy!</a>
     </div>
-</div>
-{% endblock body %}
+</main>
+{% endblock main %}

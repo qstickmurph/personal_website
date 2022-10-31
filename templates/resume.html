@@ -13,33 +13,56 @@
 
 {% block main %}
 <main id="resume-main">
-    <div id="resume-profile">
-        <h2>Profile</h2>
+    <div class="content-column">
+        <div id="resume-role" class="resume-section">
+            <h2>Role</h2>
+            <p>
+                Data Scientist, Data Engineer, ML Engineer, ML Software Dev
+            </p>
+        </div>
+        <div id="resume-location" class="resume-section">
+            <h2>Location</h2>
+            <p>
+                Salt Lake City Metro Area, Utah
+            </p>
+        </div>
+        <div id="resume-profile" class="resume-section">
+            <h2>Profile</h2>
+            <p>
+                Self-driven developer with extensive studies in mathematics,
+                logic, data science, machine learning, and linux systems
+                programming who is exited to continue their learning at a new
+                home. A well optimized and organized collaborator who strives
+                for clean, documented, and testable code.  Looking for a data
+                science or machine learning adjacent developer position.  
+           </p>
+        </div>
+        <div id="resume-skills" class="resume-section">
+            <h2>Skills</h2>
 
-    </div>
-    <div id="resume-skills">
-        <h2>Skills</h2>
+        </div>
+        <div id="resume-education" class="resume-section">
+            <h2>Education</h2>
 
-    </div>
-    <div id="resume-education">
-        <h2>Education</h2>
+        </div>
+        <div id="resume-experience" class="resume-section">
+            <h2>Experience</h2>
 
-    </div>
-    <div id="resume-experience">
-        <h2>Experience</h2>
-
-    </div>
-    <div id="resume-work">
-        <h2>Highlighted Work</h2>
-
-    </div>
-    <div id="resume-languages">
-        <h2>Languages</h2>
-
-    </div>
-    <hr align="center">
-    <div id="resume-attatchments">
-        <a href="/static/files/quinn-murphey-resume.pdf" download="quinn-murphey-resume.pdf">Download a pdf copy!</a>
+        </div>
+        <div id="resume-work" class="resume-section">
+            <h2>Highlighted Work</h2>
+            
+        </div>
+        <div id="resume-languages" class="resume-section">
+            <h2>Languages</h2>
+            <div class="resume-grid" id="resume-language-grid">
+                
+            </div>
+        </div>
+        <hr align="center">
+        <div id="resume-attatchments" class="resume-section">
+            <a href="/static/files/quinn-murphey-resume.pdf" download="quinn-murphey-resume.pdf">Download a pdf copy!</a>
+        </div>
     </div>
 </main>
 {% endblock main %}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+{% block head %}
+<head id="base-head">
+    <title>Quinn Murphey's Blog</title>
+    {% load static %}
+    <link href="/static/css/base.css" rel="stylesheet">
+    <link href="/static/css/blog.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+</head>
+{% endblock head %}
+<body>
+    <div id="base-header-container" class="header-container">
+        {% block header %}
+        <header id="base-head" class="title">
+            <a href="/"><h1>Quinn Murphey's Blog</h1></a>
+            <!-- <h2 id="subtitle">Data Science | Mathematics | Activist</h2> !-->
+        </header>
+        {% endblock header %}
+        {% block nav %}
+        <nav id="blog-nav">
+            <a id="home-link" href="/" target="_self">Home</a>
+            <a id="about-link" href="/about" target="_self">About</a>
+            <a id="blog-link" href="/blog" target="_self">Blog</a>
+            <!-- <a id="projects-link" href="/projects" target="_self">Projects</a> -->
+            <a id="resume-link" href="/resume" target="_self">Resume</a>
+            <a id="contact-link" href="/contact" target="_self">Contact</a>
+        </nav>
+        {% endblock nav %}
+    </div>
+    {% block main %}
+    <main id="blog-main">
+        <div class="content-column">
+            <p>BLOG PAGE</p>
+        </div>
+    </main>
+    {% endblock main %}
+    {% block footer %}
+    <footer id="base-footer">
+        
+    </footer>
+    {% endblock footer %}
+</body>
+</html>

@@ -1,20 +1,20 @@
-{% extends "base.html" %}
+{% extends "pages/base.html" %}
 
 {% block nav %}
-<nav id="about-nav">
+<nav id="projects-nav">
     <a id="home-link" href="/" target="_self">Home</a>
     <a id="about-link" href="/about" target="_self">About</a>
     <a id="blog-link" href="/blog" target="_self">Blog</a>
-    <!-- <a id="projects-link" href="/projects" target="_self">Projects</a> -->
+    <a id="projects-link" href="/projects" target="_self">Projects</a>
     <a id="resume-link" href="/resume" target="_self">Resume</a>
     <a id="contact-link" href="/contact" target="_self">Contact</a>
 </nav>
 {% endblock nav %}
 
-{% block main %}
-<main id="about-main">
+{% block body %}
+<main id="projects-main">
     <p>
-        ABOUT PAGE
+        PROJECTS PAGE
     </p>
 </main>
-{% endblock main %}
+{% endblock body %}
